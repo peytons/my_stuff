@@ -1,0 +1,1 @@
+alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a'
