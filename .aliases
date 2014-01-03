@@ -1,1 +1,2 @@
-alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a'
+alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a && echo "waiting 60 seconds to allocate address" && aws ec2 associate-address --instance-id i-2d7cfb4a --public-ip 54.204.46.118'
+alias bondstreet='cd ~/Dropbox/The\ Project/Product\ Engineering/bondstreet_web/'
