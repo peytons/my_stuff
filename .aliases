@@ -1,3 +1,5 @@
-alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a && echo "waiting 60 seconds to allocate address" && aws ec2 associate-address --instance-id i-2d7cfb4a --public-ip 54.204.46.118'
+alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a && echo "waiting 10 seconds to allocate address" && sleep 10 && aws ec2 associate-address --instance-id i-2d7cfb4a --public-ip 54.204.46.118 && while /usr/bin/true; do sleep 1 && echo "Checking..." && aws ec2 describe-instance-status --instance-id i-2d7cfb4a | grep initializing || break; done; echo "ready to go!! RDP to quicken.eps0.net"'
 alias bondstreet='cd ~/Dropbox/The\ Project/Product\ Engineering/bondstreet_web/'
 alias prompt='cd ~/Dropbox/My\ Documents/Projects/pebble/prompt'
+alias eb='python ~/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7/eb'
+
