@@ -2,4 +2,6 @@ alias start-quicken='aws ec2 start-instances --instance-ids i-2d7cfb4a && echo "
 alias bondstreet='cd ~/Dropbox/BST\ -\ Product/Product\ Engineering/bondstreet_web/'
 alias prompt='cd ~/Dropbox/My\ Documents/Projects/pebble/prompt'
 alias eb='python ~/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7/eb'
+alias become_darth='sudo ifconfig en0 ether b8:e8:56:07:95:ac'
+alias become_iphone='sudo ifconfig en0 ether 28:e1:4c:06:d8:81'
 
