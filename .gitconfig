@@ -14,6 +14,9 @@
 	tool = diffmerge
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[diff "rtftomarkdown"]
+        textconv=~/bin/rtftomarkdown.rb
+        prompt=false
 [merge]
 	tool = diffmerge
 [mergetool "diffmerge"]

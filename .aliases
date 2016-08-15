@@ -4,4 +4,6 @@ alias prompt='cd ~/Dropbox/My\ Documents/Projects/pebble/prompt'
 alias eb='python ~/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7/eb'
 alias become_darth='sudo ifconfig en0 ether b8:e8:56:07:95:ac'
 alias become_iphone='sudo ifconfig en0 ether 28:e1:4c:06:d8:81'
+alias gitopen='REF=`git symbolic-ref --short HEAD` && open http://github.com/`git ls-remote --get-url | cut -f2 -d":" | sed "s/\.git$//"`/compare/${REF}?expand=1'
+p() { [ $# -lt 1 ] && echo "you need an IP. $0 <IP>" && return 1; ( while true; do echo `date`; sleep 10; done ) & ping $1; }
 
