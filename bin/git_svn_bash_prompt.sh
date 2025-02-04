@@ -107,9 +107,9 @@ function set_svn_branch {
 # previous command.
 function set_prompt_symbol () {
   if test $1 -eq 0 ; then
-      PROMPT_SYMBOL="\$"
+      PROMPT_SYMBOL="⚡️"
   else
-      PROMPT_SYMBOL="${RED}\$${COLOR_NONE}"
+      PROMPT_SYMBOL="${RED}⚡️${COLOR_NONE}"
   fi
 }
 
@@ -129,7 +129,7 @@ function set_bash_prompt () {
   fi
   
   # Set the bash prompt variable.
-  PS1="\u@\h \w ${BRANCH}${PROMPT_SYMBOL} "
+  PS1="\u@\h \w ${BRANCH}${PROMPT_SYMBOL}" # used to be a space at the end
 }
 
 # Tell bash to execute this function just before displaying its prompt.
