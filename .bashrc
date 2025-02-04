@@ -7,3 +7,17 @@ export PATH="~/Dropbox/My Documents/Projects/pebble/PebbleSDK-2.0-BETA6/bin:$PAT
 [ -f /Users/peyton/.travis/travis.sh ] && source /Users/peyton/.travis/travis.sh
 
 [ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# pnpm
+export PNPM_HOME="/Users/peyton/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+# React editor
+REACT_EDITOR=cursor
+# end
+#
+#
