@@ -19,7 +19,7 @@ esac
 # pnpm end
 #
 # React editor
-REACT_EDITOR=cursor
+export REACT_EDITOR=cursor
 # end
 #
 #
