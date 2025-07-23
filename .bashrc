@@ -8,6 +8,8 @@ export PATH="~/Dropbox/My Documents/Projects/pebble/PebbleSDK-2.0-BETA6/bin:$PAT
 
 [ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
+[ -f /opt/homebrew/etc/bash_completion.d/git-completion.bash ] && source /opt/homebrew/etc/bash_completion.d/git-completion.bash
+
 # pnpm
 export PNPM_HOME="/Users/peyton/Library/pnpm"
 case ":$PATH:" in
