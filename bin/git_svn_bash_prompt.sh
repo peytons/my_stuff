@@ -107,9 +107,9 @@ function set_svn_branch {
 # previous command.
 function set_prompt_symbol () {
   if test $1 -eq 0 ; then
-      PROMPT_SYMBOL="⚡️"
+      PROMPT_SYMBOL="⚡"
   else
-      PROMPT_SYMBOL="${RED}⚡️${COLOR_NONE}"
+      PROMPT_SYMBOL="${RED}️⚡${COLOR_NONE}"
   fi
 }
 
