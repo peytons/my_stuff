@@ -1,0 +1,11 @@
+# Never commit credentials or session material
+.env
+session.json
+*.session.json
+
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
